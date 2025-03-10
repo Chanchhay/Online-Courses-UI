@@ -176,7 +176,18 @@ h2 {
     .dropdown {
         visibility: visible;
     }
+
     .btn {
         visibility: hidden;
+    }
+
+    .dropdown-content {
+        animation: growDown 300ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+    @keyframes growDown {
+        0% { transform: scaleY(0); }
+        100% { transform: scaleY(1); }
     }
 }
